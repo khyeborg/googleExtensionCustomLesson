@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Shemar is the President",
+    "version": "1",
+    "description": "A simple Chrome Extension that makes me President!",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://en.wikipedia.org/wiki/President_of_the_United_States",
+                "https://*.wikipedia.org/wiki/President_of_the_United_States"
+                
+            ],
+            "js": ["scripts.js"]
+        }
+    ]
+}
